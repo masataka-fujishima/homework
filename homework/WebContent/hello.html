@@ -7,9 +7,10 @@
 </head>
 
 <body>
-<table>
+<table th:object= "${loginData}">
     <tr>
-        <td style="color:red;">ようこそ、<span th:text="${name}">花子</span>さん。</td>
+        <td>ようこそ、<span th:text="*{name}">花子</span>さん。</td>
+        <td>アドレス：<span th:text="*{address}">アドレス</span></td>
     </tr>
 </table>
 </body>

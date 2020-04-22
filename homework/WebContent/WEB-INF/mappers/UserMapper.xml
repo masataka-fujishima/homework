@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- User Mapperインターフェースを指定する -->
+<mapper namespace="homework.mapper.UserMapper">
+
+    <!-- user情報を取得するSQL -->
+    <select id="getUser" parameterType="int" resultType="User">
+        Select * From users Where id = #{value}
+    </select>
+
+    <!-- user情報リストを取得するSQL -->
+    <select id="getUserList" resultType="User">
+        Select * From users Order By id
+    </select>
+
+    <!-- user情報追加 SQL -->
+    <insert id="insertNewUser" parameterType="User">
+        Insert into users(
+          name,address
+        )Values(
+          #{name},#{address}
+        )
+    </insert>
+
+    <!-- User情報更新 SQL -->
+    <update id="updateUser" parameterType="User">
+        update users set
+        name = #{name},
+        address = #{asserss}
+        Where id = #{id}
+    </update>
+
+    <!-- User情報削除 SQL -->
+    <delete id="deleteUser" parameterType="int">
+        Delete From users Where id = #{value}
+    </delete>
+
+</mapper>

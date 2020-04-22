@@ -6,7 +6,7 @@
 </head>
 
  <h1 th:text="${message}"></h1>
-<form action="./hello" method="post">
+<form action="./create" method="post">
 <table>
     <tr>
         <td>
@@ -20,10 +20,9 @@
     </tr>
     <tr>
         <td>
-            <input type="submit" value="回答します" />
+            <input type="submit" value="登録" />
         </td>
     </tr>
 </table>
-<p><a th:href="@{'/new'}">登録はこちら</a></p>
 </form>
 </html>
