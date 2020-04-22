@@ -43,7 +43,7 @@
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <!-- Spring-MVC設定ファイルを指定するー -->
-            <param-value>/WEB-INF/applicationContext.xml</param-value>
+            <param-value>/WEB-INF/applicationContext.xml,/WEB-INF/applicationContextDB.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
