@@ -8,7 +8,8 @@ import homework.entity.User;
 
 @Repository
 public interface UserMapper {
-    User getUser(int id);
+	User getUserByPk(int id);
+    User getUserByNameAndAddress(String name,String address);
     List<User> getUserList();
     void insertNewUser(User user);
     void updateUser(User user);

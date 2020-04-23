@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Hello Spring-MVC</title>
+<meta charset="UTF-8" />
+</head>
+
+<body>
+<span th:text="${@sessionData.name}">花子</span>さんのお部屋
+    <div>
+        str1:
+        <span th:text="${@sessionData.str1}">aaa</span>
+    </div>
+    <div>
+        str2:
+        <span th:text="${@sessionData.str2}">aaa</span>
+    </div>
+    <div>
+        str3:
+        <span th:text="${@sessionData.str3}">aaa</span>
+    </div>
+    <form th:action="@{'/home/set'}" method="get">
+        <button>set</button>
+    </form>
+        <form th:action="@{'/home/clear'}" method="get">
+        <button>clear</button>
+    </form>
+</body>
+</html>

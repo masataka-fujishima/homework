@@ -28,6 +28,7 @@
     <context:component-scan base-package="homework.entity"/>
     <context:component-scan base-package="homework.dao"/>
     <context:component-scan base-package="homework.dto"/>
+    <context:component-scan base-package="homework.data"/>
     <context:component-scan base-package="homework.form"/>
     <context:component-scan base-package="homework.service"/>
     <context:component-scan base-package="homework.mapper"/>
