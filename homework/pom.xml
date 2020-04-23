@@ -17,8 +17,8 @@
    	<!-- プロジェクトエンコーディング情報 -->
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
 
 	<!-- Thmeleaf バージョン情報 -->
 	<thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
@@ -84,6 +84,12 @@
 	    <groupId>org.springframework</groupId>
 	    <artifactId>spring-jdbc</artifactId>
 	    <version>5.2.5.RELEASE</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-security</artifactId>
+	    <version>2.2.6.RELEASE</version>
 	</dependency>
 
 	<dependency>

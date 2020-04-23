@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Hello Spring-MVC</title>
+<meta charset="UTF-8" />
+</head>
+
+<body>
+<div th:object= "${loginData}">
+
+        <div>ようこそ、<span th:text="*{name}">花子</span>さん。</div>
+        <div>アドレス：<span th:text="*{address}">アドレス</span></div>
+        <div>Name：<span th:text="${@sessionData.name}">セッション</span></div>
+
+</div>
+<p><a th:href="@{'/home/mypage'}">マイページへ</a></p>
+</body>
+</html>
