@@ -19,7 +19,7 @@ public class User {
 	@Column(length = 20, nullable = false)
 	private String name;
 
-	@Column(nullable = false)
+	@Column(length = 50,nullable = false)
 	private String address;
 
 	public int getId() {
